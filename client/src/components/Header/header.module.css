@@ -1,0 +1,21 @@
+.header {
+    padding: '0'
+}
+
+.logo {
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 900;
+    user-select: none;
+}
+
+.menu {
+    min-width: 0;
+    flex: auto;
+    justify-content: flex-end;
+}
+
+.link {
+    color: #FFF !important;
+    user-select: none;
+}

@@ -1,6 +1,6 @@
 import { AppRouter } from "./components/AppRouter";
 import { Header } from "./components/Header";
-import "./App.css"
+import "./styles/index.scss"
 
 
 function App() {
@@ -8,8 +8,12 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className="container">
-        <AppRouter />
+      <div className="wrapper">
+        <div className="sidebar sidebar__left"></div>
+        <div className="container">
+          <AppRouter />
+        </div>
+        <div className="sidebar sidebar__right"></div>
       </div>
     </div>
   );

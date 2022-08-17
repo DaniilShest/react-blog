@@ -1,0 +1,113 @@
+@import 'variables';
+
+.header {
+    padding: 20px 0;
+    position: fixed;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.28);
+    backdrop-filter: blur(4.9px);
+    -webkit-backdrop-filter: blur(4.9px);
+    width: 100%;
+
+    &__container {
+        max-width: 900px;
+        padding: 0 40px;
+        margin: 0 auto;
+        flex: 1 1 auto;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1540px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+
+    &__actions {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+
+    .search {
+
+        position: relative;
+        color: $secondary-color-text;
+        font-weight: 500;
+        max-width: 300px;
+        width: 100%;
+        margin-right: 20px;
+
+        &__input {
+            outline: none;
+            border: 1px solid $primary-border-color;
+            padding: 10px 15px;
+            border-radius: 10px;
+            padding-right: 30px;
+            font-size: 14px;
+            width: 100%;
+
+            &:focus {}
+        }
+
+        &__img {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 15px;
+        }
+    }
+
+    .write {
+        color: $tertiary-color-text;
+        font-weight: 500;
+        background: $secondary-background-color;
+        border: 1px solid $primary-border-color;
+        border-radius: 10px;
+        padding: 5px 15px;
+        transition: all .2s ease;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            color: $secondary-color-text;
+        }
+
+        span {
+            font-size: 16px;
+            margin-left: 10px;
+        }
+    }
+
+    .login {
+        width: 220px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        &__link {
+            display: flex;
+            align-items: center;
+            padding: 7px 12px;
+            transition: all .2s ease;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover {
+                background: $primary-border-color;
+            }
+        }
+
+        span {
+            &:first-child {
+                margin-right: 5px;
+            }
+
+            font-size: 16px;
+        }
+
+
+    }
+}

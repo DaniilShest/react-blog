@@ -1,0 +1,73 @@
+@import 'variables';
+
+.post-card {
+    width: 100%;
+    background-color: $secondary-background-color;
+    border-radius: 20px;
+    padding: 20px 40px;
+    margin-bottom: 40px;
+
+    &__author {
+        font-size: 14px;
+        color: $secondary-color-text;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__info {
+        max-width: 500px;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    &__text {
+        font-size: 18px;
+    }
+
+    &__img {}
+
+    &__footer {
+        display: flex;
+        align-items: center;
+
+    }
+
+    &__icon {
+        font-size: 20px;
+        font-weight: 500;
+        color: $secondary-color-text;
+        display: flex;
+        align-items: center;
+        transition: all .2s ease;
+        cursor: pointer;
+
+        &:hover {
+            color: $blue-color-text;
+        }
+
+
+        span {
+            margin-left: 5px;
+        }
+
+        &:first-child {
+            margin-right: 30px;
+        }
+    }
+
+    &__bookmark {}
+
+    &__comment {}
+
+
+}
